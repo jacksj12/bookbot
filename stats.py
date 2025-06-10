@@ -13,3 +13,6 @@ def get_num_char(text):
         else:
             char_dict[c] = 1
     return char_dict
+
+def sort_dict(char_dict):
+    return dict(sorted(char_dict.items(), key=lambda item: item[1], reverse=True))
